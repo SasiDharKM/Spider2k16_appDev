@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.appdev.spideradtask2.FormGet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#aaaaaa"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/form_layout"
+    >
+
+    <TextView
+        android:id="@+id/just_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spider Inductions 2016"
+        android:fontFamily="casual"
+        android:textColor="#2000ff"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/just_name"
+        android:layout_marginTop="30dp"
+        android:ems="13"
+        android:hint="Enter your name"/>
+    <EditText
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:ems="13"
+        android:inputType="number"
+        android:hint="Enter your Roll no."
+        />
+    <Spinner
+        android:id="@+id/dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roll"
+        android:layout_marginTop="20dp"
+        android:padding="2px"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:entries="@array/depts"
+        />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dept"
+        android:layout_marginTop="15dp"
+        android:text="Choose your profiles"/>
+    <CheckBox
+        android:id="@+id/app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_marginTop="10dp"
+        android:text="App Dev"
+        android:padding="5px"
+        android:onClick="ifAppChecked"
+        />
+    <CheckBox
+        android:id="@+id/tronix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app"
+        android:text="Tronix"
+        android:padding="5px"
+        android:onClick="ifTronixChecked"/>
+    <CheckBox
+        android:id="@+id/algo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tronix"
+        android:text="Algo"
+        android:onClick="ifAlgoChecked"
+        android:padding="5px"/>
+    <CheckBox
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/algo"
+        android:text="Web Dev"
+        android:onClick="ifWebChecked"
+        android:padding="5px"/>
+    <TextView
+        android:id="@+id/m_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/web"
+        android:layout_marginTop="20dp"
+        android:text="Whether MentorShip is required?"/>
+
+    <Switch
+        android:id="@+id/mentor"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_info"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mentor"
+        android:onClick="submitForm"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
+</ScrollView>
