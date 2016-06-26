@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SpiderTask3AD</string>
+    <string-array name="tracks">
+        <item>Nerupu Da</item>
+        <item>Engo Odigindrai</item>
+        <item>Badhalu Tochani</item>
+        <item>Jagdish On Mission</item>
+    </string-array>
+</resources>
